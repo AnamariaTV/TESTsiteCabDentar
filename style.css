@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+  }
+
+
+
+
+/* Navigation */
+
+header{display: flex; justify-content: space-between; align-items: center;
+    height: 7rem;margin: 1rem 10rem; background-color: #fff;}
+  
+   .logo > img{width: 8rem;}
+
+.navigation {display: flex;}
+.navigation > a{font-size:2rem;text-decoration: none;color: black;margin-right: 1.5rem;}
+.navigation > a:last-child{margin-right: 0;}
+.navigation > a:hover{text-decoration: underline;}
+
+@media (max-width:500px) {
+    header{margin: 0.5rem 5rem;}
+    .navigation > a{font-size: 1.5rem;}
+    .logo>img {width: 5rem;}
+                  }  
+
+/* Video */
+video{width: 100%;}
+
+/* About us */
+
+.grid-about{display: grid; grid-template-columns: auto auto;padding: 5rem; text-align: center;}
+.grid-box-about{padding: 3rem 5rem 0rem 5rem;}
+
+
+#about h1{font-size: 4rem;font-weight: 500; margin-top: 5rem;color: #caa880;
+text-align: left; padding-bottom: 2rem;}
+#about img{width: 100%;height: auto; border-radius: 4rem;}
+#about p{font-size: 1.5rem;padding-top: 1rem;line-height: 2.5; color: #3b4964; text-align: justify;}
+
+@media (max-width:768px) {
+.grid-about {grid-template-columns: inherit;padding: 0;}
+ .grid-box-about {margin-left: 4rem; margin-right: 4rem;padding: 0rem;}
+}
+
+/* Services */
+
+.grid{display: grid; grid-template-columns: auto auto auto; padding: 5rem; text-align: center;}
+.grid-box{padding: 2rem;}
+
+#services > h1{font-size:4rem;font-weight: 800; color: #caa880; text-align: center;margin-top: 5rem;margin-bottom: 7rem;}
+#services h2{font-size: 2.5rem;font-weight: 700; color: #caa880; text-align: center;}
+#services img{height: 10rem;}
+#services p{font-size: 1.5rem;margin-top: 1rem;margin-bottom: 2rem;line-height: 2.2; color: #3b4964;}
+
+@media (max-width:768px) {
+.grid {grid-template-columns: inherit;padding: 0;}
+.grid-box{margin-left: 4rem; margin-right: 4rem;}
+ 
+}
+/* Contact */
+
+.img-before-contact{background-image: url(images/medi-3.jpg); display: flex; align-items: center;
+    height: 30rem; background-position: center; background-repeat: no-repeat; margin-top: 10rem;}
+.img-before-contact > p{font-size: 2.5rem;margin:auto 6rem;text-align: center;color: #fff;}
+
+.contact{margin: 5rem 10rem 3rem;}
+.contact h1{font-size: 4rem; font-weight: 600; margin-bottom: 2rem;color: #000;}
+address, a{font-size: 2rem;}
+a{text-decoration: none;display: block;margin: 1.5rem 0rem;}
+hr{margin: auto 3rem;}
+.copyright{text-align: center; font-size: 1.5rem;padding: 1rem 0rem;}
+
+@media (max-width:768px){
+    address, a{font-size: 1.5rem;}
+}
